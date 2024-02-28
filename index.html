@@ -1,0 +1,225 @@
+<!-- ===================HEAD=================== -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Saigon Pho VN - Restaurant</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/adminStyles.css" />
+    <link rel="stylesheet" href="./styles/preloaderStyles.css" />
+    <base href="/" />
+  </head>
+
+  <body>
+    <!-- ===================HEAD=================== -->
+
+    <!-- ===================HEADER=================== -->
+    <header
+      id="header"
+      class="d-flex flex-column align-items-center hidden fixed-top"
+    >
+      <nav class="w-100 navbar-expand-lg" id="navbar">
+        <div
+          class="container-lg d-flex justify-content-between align-items-center"
+        >
+          <span style="width: 110px; height: 110px" class="img-fluid">
+            <a href="./home.html" class="brand-logo">
+              <img
+                src="./images/logo.png"
+                class="img-fluid d-md-block"
+                width="170"
+                alt="Logo"
+              />
+            </a>
+          </span>
+          <ul class="nav d-none d-md-flex">
+            <li>
+              <a href="./home.html" class="text-light nav-link active">Home</a>
+            </li>
+            <li><a href="./menu.html" class="text-light nav-link">Menu</a></li>
+            <li>
+              <a href="./about.html" class="text-light nav-link">About us</a>
+            </li>
+          </ul>
+          <div
+            class="menu-btn d-block d-md-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#side-bar"
+            aria-controls="offcanvasRight"
+          >
+            <i class="fas fa-bars text-light"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ===================HEADER=================== -->
+
+    <!-- ===================SIDEBAR=================== -->
+
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="side-bar"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <h5
+          class="offcanvas-title fw-2 bold"
+          style="color: #7c5132"
+          id="offcanvasRightLabel"
+        >
+          NEW SAIGON PHO VN
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="menu">
+          <li><a href="./home.html" class="nav-link active">Home</a></li>
+          <li><a href="./menu.html" class="nav-link">Menu</a></li>
+          <li><a href="./about.html" class="nav-link">About us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ===================SIDEBAR=================== -->
+
+    <!-- ===================PRELOADER=================== -->
+    <div class="bg-light loading" id="preloader">
+      <div class="windows8">
+        <div class="wBall" id="wBall_1">
+          <div class="wInnerBall"></div>
+        </div>
+        <div class="wBall" id="wBall_2">
+          <div class="wInnerBall"></div>
+        </div>
+        <div class="wBall" id="wBall_3">
+          <div class="wInnerBall"></div>
+        </div>
+        <div class="wBall" id="wBall_4">
+          <div class="wInnerBall"></div>
+        </div>
+        <div class="wBall" id="wBall_5">
+          <div class="wInnerBall"></div>
+        </div>
+      </div>
+    </div>
+    <!-- ===================PRELOADER=================== -->
+
+    <div class="home-img">
+      <div class="container-lg h-100 position-relative">
+        <div class="text-group">
+          <div class="slogan text-white">
+            Bring Vietnamese Culture to The World
+          </div>
+          <span class="text-white"
+            >Experience Vietnam in the heart of Newburgh! At New Saigon Pho VN,
+            we're passionate about bringing Vietnamese culture to the world.
+            Join us for authentic flavors, from our signature pho to traditional
+            banh mi sandwiches. Visit us at 202 S Plank Rd for a taste of
+            Vietnam's finest.
+            <a href="./about.html" class="text-orange fw-bold hover-underline"
+              >See more</a
+            >
+          </span>
+        </div>
+
+        <div
+          class="d-flex flex-column justify-content-end d-none d-md-block"
+          style="
+            z-index: 4;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            opacity: 0.2;
+            margin-right: 0.745rem;
+          "
+        >
+          <!-- <div class="mouse ms-auto opacity-100"></div> -->
+          <div class="d-flex gap-3 text-light pb-4 pt-2">
+            <span class="fw-bold fw-5">Contact us</span>
+            <span>Hotline: (845) 762 5511</span>
+            <div class="fw-5 d-flex gap-2">
+              <a class="text-orange" href=""
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a class="text-orange" href=""
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a class="text-orange" href=""
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pho-wrap">
+        <div class="pho">
+          <img
+            src="./images/pho.png"
+            class="img-fluid ratio ratio-4x3"
+            alt="pho"
+          />
+        </div>
+
+        <div class="smoke-wrap">
+          <img
+            class="smoke"
+            src="./images/smoke.png"
+            class="img-fluid"
+            alt="smoke"
+          />
+        </div>
+        <div class="smoke-wrap">
+          <img
+            class="smoke2"
+            src="./images/smoke.png"
+            class="img-fluid"
+            alt="smoke"
+          />
+        </div>
+        <div class="smoke-wrap">
+          <img
+            class="smoke3"
+            src="./images/smoke.png"
+            class="img-fluid"
+            alt="smoke"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="./scripts/preloader.js"></script>
+    <script src="./scripts/headerAnimation.js"></script>
+  </body>
+</html>
