@@ -1,0 +1,438 @@
+<!-- ===================HEAD=================== -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Saigon Pho VN - Restaurant</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/adminStyles.css" />
+    <link rel="stylesheet" href="/styles/preloaderStyles.css" />
+    <base href="/" />
+  </head>
+
+  <body>
+    <!-- ===================HEAD=================== -->
+
+    <!-- ===================HEADER=================== -->
+    <header
+      id="header"
+      class="d-flex flex-column align-items-center hidden fixed-top"
+    >
+      <nav class="w-100 navbar-expand-lg" id="navbar">
+        <div
+          class="container-lg d-flex justify-content-between align-items-center"
+        >
+          <span style="width: 110px; height: 110px" class="img-fluid">
+            <a href="./home.html" class="brand-logo">
+              <img
+                src="./images/logo.png"
+                class="img-fluid d-md-block"
+                width="170"
+                alt="Logo"
+              />
+            </a>
+          </span>
+          <ul class="nav d-none d-md-flex">
+            <li><a href="./home.html" class="text-light nav-link">Home</a></li>
+            <li><a href="./menu.html" class="text-light nav-link">Menu</a></li>
+            <li>
+              <a href="./about.html" class="text-light nav-link active"
+                >About us</a
+              >
+            </li>
+          </ul>
+          <div
+            class="menu-btn d-block d-md-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#side-bar"
+            aria-controls="offcanvasRight"
+          >
+            <i class="fas fa-bars text-light"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ===================HEADER=================== -->
+
+    <!-- ===================SIDEBAR=================== -->
+    <!-- <div class="side-bar">
+  <div class="top">
+    <div class="close-btn">
+      <i class="fas fa-times fa-beat"></i>
+    </div>
+  </div>
+  <ul class="menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Menu</a></li>
+    <li><a href="#">About us</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</div> -->
+
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="side-bar"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <h5
+          class="offcanvas-title fw-2 bold"
+          style="color: #7c5132"
+          id="offcanvasRightLabel"
+        >
+          NEW SAIGON PHO VN
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="menu">
+          <li><a href="./home.html" class="nav-link">Home</a></li>
+          <li><a href="./menu.html" class="nav-link">Menu</a></li>
+          <li><a href="./about.html" class="nav-link active">About us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ===================SIDEBAR=================== -->
+
+    <!-- ===================PRELOADER=================== -->
+    <div class="bg-light loading" id="preloader">
+      <div class="windows8">
+        <div class="wBall" id="wBall_1">
+          <div class="wInnerBall"></div>
+        </div>
+        <div class="wBall" id="wBall_2">
+          <div class="wInnerBall"></div>
+        </div>
+        <div class="wBall" id="wBall_3">
+          <div class="wInnerBall"></div>
+        </div>
+        <div class="wBall" id="wBall_4">
+          <div class="wInnerBall"></div>
+        </div>
+        <div class="wBall" id="wBall_5">
+          <div class="wInnerBall"></div>
+        </div>
+      </div>
+    </div>
+    <!-- ===================PRELOADER=================== -->
+
+    <div id="header-img">
+      <span
+        style="font-size: 4.5rem"
+        class="container-lg text-white fw-bolder text-center position-absolute top-50 start-50 translate-middle"
+        id="title"
+        >About</span
+      >
+    </div>
+
+    <!-- ===================CONTENT=================== -->
+    <main class="h-100 mb-5 d-flex justify-content-center content">
+      <div
+        class="card rounded-4 shadow-lg border blur-min d-flex justify-content-center align-items-center py-5"
+        id="menu-card"
+      >
+        <div class="row py-5 px-0 container-lg">
+          <!-- ===================MENU=================== -->
+          <section class="col-12 mb-5">
+            <span
+              class="row d-flex justify-content-center align-items-center mb-3"
+            >
+              <hr style="height: 3px; background: orange" class="col m-0" />
+              <h2 class="col text-center fw-bold">About Us</h2>
+              <hr
+                style="height: 3px; background: orange"
+                class="col m-0 orange"
+              />
+            </span>
+            <div class="row">
+              <div class="col-lg col-md-12">
+                <p>
+                  Welcome to New Pho Saigon VN Restaurant, where we bring the
+                  rich and authentic flavors of Vietnamese phở to your table.
+                  Our passion for quality ingredients and traditional recipes
+                  sets us apart, providing you with a genuine taste of Vietnam.
+                </p>
+                <p>
+                  At New Pho Saigon VN, we take pride in crafting each bowl of
+                  phở with care and dedication. Our chefs use only the freshest
+                  herbs, spices, and locally sourced ingredients to create the
+                  distinctive flavors that make phở a beloved dish worldwide.
+                </p>
+                <p>
+                  Whether you're a phở enthusiast or a first-time explorer of
+                  Vietnamese cuisine, our warm and inviting atmosphere combined
+                  with the tantalizing aroma of our phở will make your dining
+                  experience memorable.
+                </p>
+              </div>
+              <div
+                class="col-lg col-md-12 d-flex flex-column justify-content-end align-items-center"
+              >
+                <div style="height: 64px" class="block-spacer w-100"></div>
+                <figure class="block-image mt-5">
+                  <img
+                    src="./images/about-image.png"
+                    alt="About-1"
+                    width="768"
+                    height="1024"
+                    sizes="(max-width: 768px) 100vw, 768px"
+                  />
+                </figure>
+              </div>
+              <div
+                class="col-lg col-md-12 d-flex flex-column justify-content-start align-items-center"
+              >
+                <figure class="block-image mb-5 mt-2">
+                  <img
+                    src="./images/about-image.png"
+                    alt="About-2"
+                    width="768"
+                    height="1024"
+                    sizes="(max-width: 768px) 100vw, 768px"
+                  />
+                </figure>
+                <div style="height: 64px" class="block-spacer w-100"></div>
+              </div>
+            </div>
+          </section>
+
+          <section class="col-12 mb-5">
+            <span
+              class="row d-flex justify-content-center align-items-center mb-3"
+            >
+              <hr style="height: 3px; background: orange" class="col m-0" />
+              <h2 class="col text-center fw-bold">Our Mission</h2>
+              <hr
+                style="height: 3px; background: orange"
+                class="col m-0 orange"
+              />
+            </span>
+            <p class="text-center">
+              Our mission is to share the authentic flavors of Vietnam with our
+              community. We strive to create a welcoming environment where you
+              can savor the comfort and richness of our phở, made with love and
+              commitment to quality. We believe in providing an exceptional
+              dining experience that reflects the heart of Vietnamese culinary
+              tradition.
+            </p>
+          </section>
+
+          <section class="col-12">
+            <span
+              class="row d-flex justify-content-center align-items-center mb-3"
+            >
+              <hr style="height: 3px; background: orange" class="col m-0" />
+              <h2 class="col text-center fw-bold">Visit Us</h2>
+              <hr
+                style="height: 3px; background: orange"
+                class="col m-0 orange"
+              />
+            </span>
+            <span class="w-100 d-flex justify-content-center">
+              <div id="about-img"></div>
+            </span>
+            <p class="text-center">
+              Join us at New Pho Saigon VN Restaurant to embark on a culinary
+              journey through the exquisite taste of phở. Located in a
+              convenient and friendly setting, we look forward to serving you
+              and making your dining experience truly special.
+            </p>
+            <p class="text-center">
+              Address: 202 S Plank Rd, Newburgh, NY 12550, USA
+            </p>
+            <p class="text-center">Phone: (845) 762 5511</p>
+          </section>
+          <!-- ===================MENU=================== -->
+        </div>
+      </div>
+    </main>
+    <!-- ===================CONTENT=================== -->
+
+    <!-- ===================ASSETS=================== -->
+    <div class="btns">
+      <button
+        type="button"
+        id="more-btn"
+        class="rounded-circle border-0 d-flex align-items-center justify-content-center shadow"
+      >
+        <i class="fa-solid fa-ellipsis"></i>
+      </button>
+      <button
+        type="button"
+        id="to-top"
+        class="rounded-circle border-0 d-flex align-items-center justify-content-center shadow"
+      >
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </div>
+
+    <ul id="assets">
+      <li>
+        <a
+          class="rounded-circle border-0 d-flex align-items-center justify-content-center"
+          id="call-btn"
+          href="tel:+18457625511"
+        >
+          <i class="fa-solid fa-phone"></i>
+        </a>
+      </li>
+    </ul>
+    <!-- ===================ASSETS=================== -->
+
+    <!-- ===================FOOTER=================== -->
+    <footer>
+      <div
+        class="container-lg pt-5 pb-3 d-flex flex-column justify-content-center text-center text-lg-start"
+      >
+        <h3 class="fw-bold fs-2 mb-4">New Pho Saigon VN</h3>
+        <div class="row pb-3 gap-3">
+          <div
+            style="max-width: 500px; max-height: 300px"
+            class="col-lg-5 ratio ratio-16x9 me-lg-4 mx-auto"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2986.9558267142124!2d-74.0729262235298!3d41.52689748732938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89dd2f0753666acf%3A0x3ff56c5394c2bce5!2sNEW%20SAI%20GON%20PHO%20VN!5e0!3m2!1svi!2s!4v1708175369778!5m2!1svi!2s"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+          <div class="col-lg row mx-auto">
+            <div class="col-lg d-flex flex-column">
+              <span class="fw-bold fs-5">Address</span>
+              <span>202 S Plank Rd, Newburgh, NY 12550, USA</span>
+            </div>
+            <div class="col-lg d-flex flex-column">
+              <span class="fw-bold fs-5">Details</span>
+              <span
+                ><a style="text-decoration: none" class="link-dark" href="/home"
+                  >Home</a
+                ></span
+              >
+              <span
+                ><a style="text-decoration: none" class="link-dark" href="/menu"
+                  >Menu</a
+                ></span
+              >
+              <span
+                ><a
+                  style="text-decoration: none"
+                  class="link-dark"
+                  href="/about"
+                  >About</a
+                ></span
+              >
+            </div>
+            <div class="col-lg d-flex flex-column">
+              <span class="fw-bold fs-5">Contact us</span>
+              <span>Hotline: (845) 762 5511</span>
+              <div class="fs-5">
+                <a class="link-dark" href=""
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a class="link-dark" href=""
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a class="link-dark" href=""
+                  ><i class="fa-brands fa-square-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="w-100 p-0 m-0" />
+      <div class="container-lg mt-3 pb-3 text-center">
+        <span class="fw-bold"
+          ><i class="fa-regular fa-copyright"></i> Copyright 2024
+          newphosaigon.com. All rights reserved.</span
+        >
+      </div>
+    </footer>
+    <script src="/scripts/menu.js"></script>
+    <script src="/scripts/backToTop.js"></script>
+    <script src="/scripts/preloader.js"></script>
+    <script src="/scripts/assetsAnimation.js"></script>
+    <script src="/scripts/headerAnimation.js"></script>
+    <script>
+      $(document).ready(function () {
+        ((g) => {
+          var h,
+            a,
+            k,
+            p = "The Google Maps JavaScript API",
+            c = "google",
+            l = "importLibrary",
+            q = "__ib__",
+            m = document,
+            b = window;
+          b = b[c] || (b[c] = {});
+          var d = b.maps || (b.maps = {}),
+            r = new Set(),
+            e = new URLSearchParams(),
+            u = () =>
+              h ||
+              (h = new Promise(async (f, n) => {
+                await (a = m.createElement("script"));
+                e.set("libraries", [...r] + "");
+                for (k in g)
+                  e.set(
+                    k.replace(/[A-Z]/g, (t) => "_" + t[0].toLowerCase()),
+                    g[k]
+                  );
+                e.set("callback", c + ".maps." + q);
+                a.src = `https://maps.${c}apis.com/maps/api/js?` + e;
+                d[q] = f;
+                a.onerror = () => (h = n(Error(p + " could not load.")));
+                a.nonce = m.querySelector("script[nonce]")?.nonce || "";
+                m.head.append(a);
+              }));
+          d[l]
+            ? console.warn(p + " only loads once. Ignoring:", g)
+            : (d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)));
+        })({
+          key: "",
+          v: "weekly",
+        });
+      });
+    </script>
+  </body>
+</html>
+<!-- ===================FOOTER=================== -->
