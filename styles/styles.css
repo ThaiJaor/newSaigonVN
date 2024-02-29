@@ -40,7 +40,7 @@ footer {
 
 .home-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("./images/one-plant-dark-surface.jpg");
+    url("https://thaijaor.github.io/newSaigonVN/images/one-plant-dark-surface.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -381,7 +381,7 @@ footer {
 
 #header-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("./images/header-image.png");
+    url("https://thaijaor.github.io/newSaigonVN/images/header-image.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -675,7 +675,7 @@ hr {
 
 #about-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("./images/about-image.png");
+    url("https://thaijaor.github.io/newSaigonVN/images/about-image.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
